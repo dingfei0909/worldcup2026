@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2026世界杯直播</title>
+    <!-- 浏览器图标 -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>" type="image/svg+xml">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>" type="image/svg+xml">
+    <!-- iOS 图标 -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%231a1a2e' width='180' height='180' rx='30'/><text x='90' y='110' font-size='100' text-anchor='middle'>🏆</text></svg>" sizes="180x180">
+    <!-- Open Graph 元数据（微信分享用） -->
+    <meta property="og:title" content="2026世界杯直播">
+    <meta property="og:description" content="2026美加墨世界杯直播入口 · 实时观看 · 积分榜 · 赛程">
+    <meta property="og:image" content="https://szb.northnews.cn/bfxb/resfile/2023-09-07/08/2943074_cjp_1693991237737_s.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="https://worldcup2026.example.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="2026世界杯">
+    <!-- 微信自定义分享 -->
+    <meta name="description" content="2026美加墨世界杯直播入口，实时观看精彩赛事，查看积分榜和赛程">
+    <meta name="keywords" content="世界杯,2026世界杯,足球直播,美加墨世界杯,世界杯直播">
+    <!-- 微信公众号分享标签 -->
+    <meta name="wx:title" content="2026世界杯直播">
+    <meta name="wx:desc" content="2026美加墨世界杯直播入口 · 实时观看 · 积分榜 · 赛程">
+    <meta name="wx:image" content="https://szb.northnews.cn/bfxb/resfile/2023-09-07/08/2943074_cjp_1693991237737_s.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            background: linear-gradient(180deg, #0a1628 0%, #1a1a2e 30%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* 顶部背景装饰 */
+        .header-bg {
+            position: relative;
+            height: 200px;
+            background: linear-gradient(180deg, 
+                #1e3a5f 0%, 
+                #0d2137 40%,
+                transparent 100%
+            );
+            overflow: hidden;
+        }
+
+        .header-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 50%, rgba(255, 100, 0, 0.1) 0%, transparent 30%);
+        }
+
+        /* 足球图案 */
+        .ball-pattern {
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.08;
+            top: 10px;
+            right: -30px;
+            transform: rotate(15deg);
+        }
+
+        .ball-pattern-2 {
+            font-size: 60px;
+            opacity: 0.05;
+            top: 110px;
+            left: -20px;
+            transform: rotate(-20deg);
+        }
+
+        /* 主要内容 */
+        .main-content {
+            position: relative;
+            margin-top: -80px;
+            padding: 0 16px 40px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Logo区域 */
+        .logo-section {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+            background: url('https://szb.northnews.cn/bfxb/resfile/2023-09-07/08/2943074_cjp_1693991237737_s.jpg') center/cover no-repeat;
+            border: 3px solid #ffd700;
+            border-radius: 24px;
+            box-shadow: 
+                0 0 40px rgba(255, 215, 0, 0.4),
+                0 10px 50px rgba(0, 0, 0, 0.5);
+            margin-bottom: 16px;
+        }
+
+        .logo-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo-year {
+            display: inline-block;
+            background: linear-gradient(90deg, #ffd700, #ff8c00);
+            color: #1a1a2e;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 12px;
+            margin-top: 8px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 分区标题 */
+        .section-title {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 14px;
+            padding-left: 8px;
+            border-left: 3px solid #ffd700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .section-icon {
+            font-size: 18px;
+        }
+
+        /* 直播卡片 */
+        .live-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .live-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.05) 100%);
+            border-radius: 16px;
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .live-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+        }
+
+        .live-card.cctv::before {
+            background: linear-gradient(180deg, #e74c3c, #c0392b);
+        }
+
+        .live-card.migu::before {
+            background: linear-gradient(180deg, #00d2d3, #01a3a4);
+        }
+
+        .live-card:hover,
+        .live-card:active {
+            transform: translateX(5px);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.08) 100%);
+        }
+
+        .live-icon {
+            font-size: 36px;
+            margin-right: 16px;
+        }
+
+        .live-info {
+            flex: 1;
+        }
+
+        .live-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .live-desc {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .live-tag {
+            background: rgba(255, 215, 0, 0.2);
+            color: #ffd700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .live-tag.hot {
+            background: rgba(231, 76, 60, 0.2);
+            color: #ff6b6b;
+        }
+
+        /* 数据卡片 */
+        .data-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .data-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
+            border-radius: 14px;
+            padding: 18px 14px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .data-card:hover,
+        .data-card:active {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.06) 100%);
+            transform: translateY(-3px);
+        }
+
+        .data-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .data-name {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .data-desc {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* 工具卡片 - 大卡片 */
+        .tool-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 140, 0, 0.1) 100%);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            margin-bottom: 28px;
+        }
+
+        .tool-card:hover,
+        .tool-card:active {
+            transform: translateX(5px);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 140, 0, 0.15) 100%);
+        }
+
+        .tool-icon {
+            font-size: 36px;
+            margin-right: 16px;
+        }
+
+        .tool-info {
+            flex: 1;
+        }
+
+        .tool-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffd700;
+            margin-bottom: 4px;
+        }
+
+        .tool-desc {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .tool-arrow {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* 底部 */
+        footer {
+            text-align: center;
+            padding: 30px 20px 50px;
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 11px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        /* 加载提示 */
+        .loading-toast {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 20px 40px;
+            border-radius: 12px;
+            font-size: 14px;
+            z-index: 1000;
+            display: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .loading-toast.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+            to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        }
+
+        /* 动画 */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-section { animation: slideUp 0.6s ease; }
+        .section-title:nth-of-type(1) { animation: slideUp 0.6s ease 0.1s both; }
+        .live-card:nth-child(1) { animation: slideUp 0.6s ease 0.15s both; }
+        .live-card:nth-child(2) { animation: slideUp 0.6s ease 0.2s both; }
+        .section-title:nth-of-type(2) { animation: slideUp 0.6s ease 0.25s both; }
+        .data-card:nth-child(1) { animation: slideUp 0.6s ease 0.3s both; }
+        .data-card:nth-child(2) { animation: slideUp 0.6s ease 0.35s both; }
+        .tool-card { animation: slideUp 0.6s ease 0.4s both; }
+    </style>
+</head>
+<body>
+    <div class="loading-toast" id="loadingToast">
+        正在打开...
+    </div>
+
+    <!-- 顶部背景 -->
+    <div class="header-bg">
+        <div class="ball-pattern">⚽</div>
+        <div class="ball-pattern-2">🏆</div>
+    </div>
+
+    <!-- 主要内容 -->
+    <div class="main-content">
+        <!-- Logo -->
+        <div class="logo-section">
+            <div class="logo-container"></div>
+            <p class="logo-subtitle">2026 美加墨世界杯 · 常用链接</p>
+        </div>
+
+        <!-- 竞彩投注（第一个） -->
+        <h2 class="section-title">
+            <span class="section-icon">🎯</span>
+            竞猜投注
+        </h2>
+        <div class="tool-card" onclick="openLink('https://m.sporttery.cn/mjc/jsq/zqspf/', '竞彩足球')">
+            <span class="tool-icon">🎯</span>
+            <div class="tool-info">
+                <div class="tool-name">竞彩足球</div>
+                <div class="tool-desc">足球胜平负投注计算</div>
+            </div>
+            <span class="tool-arrow">→</span>
+        </div>
+
+        <!-- 积分榜和赛程（第二个） -->
+        <h2 class="section-title">
+            <span class="section-icon">📊</span>
+            积分榜 & 赛程
+        </h2>
+        <div class="data-cards">
+            <div class="data-card" onclick="openLink('https://m.dongqiudi.com/statTC/9/rankingTeam', '懂球帝积分榜')">
+                <div class="data-icon">🏅</div>
+                <div class="data-name">积分榜</div>
+                <div class="data-desc">各组实时排名</div>
+            </div>
+
+            <div class="data-card" onclick="openLink('https://m.dongqiudi.com/statTC/9/rankingSchedule', '懂球帝赛程')">
+                <div class="data-icon">📅</div>
+                <div class="data-name">赛程</div>
+                <div class="data-desc">完整赛程查询</div>
+            </div>
+        </div>
+
+        <!-- 直播观看（最后） -->
+        <h2 class="section-title">
+            <span class="section-icon">📺</span>
+            直播观看
+        </h2>
+        <div class="live-cards">
+            <div class="live-card cctv" onclick="openLink('https://worldcup.cctv.com/', '央视世界杯')">
+                <span class="live-icon">📺</span>
+                <div class="live-info">
+                    <div class="live-name">央视世界杯</div>
+                    <div class="live-desc">官方授权 · 免费观看</div>
+                </div>
+                <span class="live-tag hot">🔥 推荐</span>
+            </div>
+
+            <div class="live-card migu" onclick="openLink('https://www.miguvideo.com/', '咪咕视频')">
+                <span class="live-icon">🎬</span>
+                <div class="live-info">
+                    <div class="live-name">咪咕视频</div>
+                    <div class="live-desc">AI解说 · 多视角切换</div>
+                </div>
+                <span class="live-tag">4K</span>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <footer>
+            <p>⚠️ 本页面仅提供官方直播入口</p>
+            <p>请通过合法渠道观看精彩赛事</p>
+            <p style="margin-top: 10px; opacity: 0.5;">© 2026 World Cup</p>
+        </footer>
+    </div>
+
+    <script>
+        function openLink(url, name) {
+            const toast = document.getElementById('loadingToast');
+            
+            // 显示加载提示
+            toast.textContent = `正在打开 ${name}...`;
+            toast.classList.add('show');
+            
+            // 延迟一下再跳转
+            setTimeout(() => {
+                window.open(url, '_blank');
+                
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 500);
+            }, 300);
+        }
+
+        // 禁止双击缩放
+        document.addEventListener('dblclick', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+
+        // 禁止捏合缩放
+        document.addEventListener('touchmove', function(e) {
+            if (e.touches.length > 1) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    </script>
+</body>
+</html>
